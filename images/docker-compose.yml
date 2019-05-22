@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  # JavaScript Images
+  nodejs-ubuntu:
+    image: vikashkothary/nodejs:2.6-ubuntu19.04
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  nodejs-alpine:
+    image: vikashkothary/nodejs:2.6-alpine3.9
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  nodejs-distroless:
+    image: vikashkothary/nodejs:2.6-distroless
+    build:
+      context: .
+      dockerfile: Docker0file
+
+  # TypeScript Images
+  nodets-ubuntu:
+    image: vikashkothary/nodets:2.6-ubuntu19.04
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  nodets-alpine:
+    image: vikashkothary/nodets:2.6-alpine3.9
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  nodets-distroless:
+    image: vikashkothary/nodets:2.6-distroless
+    build:
+      context: .
+      dockerfile: Dockerfile
